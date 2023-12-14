@@ -1,0 +1,24 @@
+@use '../0-base/variables'
+@use '../0-base/base-mixins'
+.btn
+    display: grid
+    place-items: center
+    
+    
+    border-radius: 2.8rem
+    background-color: variables.$btn-download-bg
+    padding: 1.6rem 0rem
+
+    width: 100%
+    height: min-content
+
+    @include base-mixins.tablet
+        padding: 1.1rem 2.4rem
+        width: fit-content
+
+    &-browser
+        background-color: variables.$btn-browser-bg
+        color: variables.$btn-browser-text-color
+
+        @include base-mixins.tablet
+            padding: 1.1rem 1.7rem

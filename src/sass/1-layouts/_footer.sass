@@ -1,0 +1,11 @@
+@use '../0-base/variables'
+@use '../0-base/base-mixins'
+
+.footer
+    background-color: variables.$footer-bg
+    padding: 5rem 0rem
+    text-align: center
+
+    &__img
+        @include base-mixins.desktop
+            height: 6.3rem

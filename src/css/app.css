@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+header, main {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.article {
+  color: #FFFFFF;
+  background: url(../img/Header_Background.jpg) no-repeat top right 25%/cover;
+  display: grid;
+  gap: 2.4rem;
+  padding: 7rem 2.4rem;
+  height: 50.6rem;
+}
+@media (min-width: 768px) {
+  .article {
+    background: url(../img/Header_Background.jpg) no-repeat center/cover;
+    text-align: center;
+    justify-items: center;
+  }
+}
+.article__title {
+  font-size: 3.2rem;
+  font-weight: 400;
+  font-family: Luckiest Guy;
+  width: 27.8rem;
+}
+@media (min-width: 768px) {
+  .article__title {
+    font-size: 5.6rem;
+    width: 31.3rem;
+  }
+}
+.article__text {
+  max-width: 75.7rem;
+}
+.article .app-download {
+  display: flex;
+  flex-flow: column;
+  gap: 1.6rem;
+}
+@media (min-width: 768px) {
+  .article .app-download {
+    flex-flow: row;
+  }
+}
+
+.wrapper {
+  display: grid;
+  gap: 2.7rem;
+  background-color: #FFFFFF;
+  padding: 4rem 2.4rem;
+}
+.wrapper:not(:first-child) {
+  background-color: #F6F6F6;
+}
+@media (min-width: 1280px) {
+  .wrapper:not(:last-child) {
+    grid-template-columns: 60rem 34.8rem;
+    place-content: center;
+  }
+}
+@media (min-width: 1280px) {
+  .wrapper:nth-child(2) {
+    grid-template-columns: 34.8rem 60rem;
+  }
+}
+@media (min-width: 1280px) {
+  .wrapper:nth-child(2) .wrapper__section {
+    order: 1;
+  }
+}
+@media (min-width: 1280px) {
+  .wrapper:nth-child(2) .wrapper__img {
+    order: 2;
+  }
+}
+.wrapper:last-child {
+  justify-items: center;
+}
+@media (min-width: 1280px) {
+  .wrapper:last-child .wrapper__section {
+    justify-items: center;
+    text-align: center;
+    max-width: 80rem;
+  }
+}
+.wrapper:last-child .wrapper__title {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-size: 3.2rem;
+}
+@media (min-width: 1280px) {
+  .wrapper:last-child .wrapper__title {
+    max-width: 60.8rem;
+    font-size: 4rem;
+  }
+}
+.wrapper__img {
+  max-width: 100%;
+}
+.wrapper__section {
+  display: grid;
+  gap: 2.7rem;
+  height: max-content;
+  align-self: center;
+}
+.wrapper__title {
+  color: #23272A;
+  font-size: 2.4rem;
+}
+@media (min-width: 1280px) {
+  .wrapper__title {
+    max-width: 32.9rem;
+    font-size: 4rem;
+  }
+}
+
+.footer {
+  background-color: #23272A;
+  padding: 5rem 0rem;
+  text-align: center;
+}
+@media (min-width: 1280px) {
+  .footer__img {
+    height: 6.3rem;
+  }
+}
+
+.btn {
+  display: grid;
+  place-items: center;
+  border-radius: 2.8rem;
+  background-color: #FFFFFF;
+  padding: 1.6rem 0rem;
+  width: 100%;
+  height: min-content;
+}
+@media (min-width: 768px) {
+  .btn {
+    padding: 1.1rem 2.4rem;
+    width: fit-content;
+  }
+}
+.btn-browser {
+  background-color: #23272A;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .btn-browser {
+    padding: 1.1rem 1.7rem;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

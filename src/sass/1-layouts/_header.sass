@@ -1,0 +1,39 @@
+@use '../0-base/variables'
+@use '../0-base/base-mixins'
+
+.article
+    color: variables.$article-title-color
+    background: url(../img/Header_Background.jpg) no-repeat top right 25% / cover
+    display: grid
+    gap: 2.4rem
+
+    padding: 7rem 2.4rem
+    height: 50.6rem
+
+    @include base-mixins.tablet
+        background: url(../img/Header_Background.jpg) no-repeat center / cover
+        text-align: center
+        justify-items: center
+
+    &__title
+        font-size: 3.2rem
+        font-weight: 400
+        font-family: Luckiest Guy
+        width: 27.8rem
+
+        @include base-mixins.tablet
+            font-size: 5.6rem
+            width: 31.3rem
+
+    &__text
+        max-width: 75.7rem
+
+    .app-download
+        display: flex
+        flex-flow: column
+        gap: 1.6rem
+        
+
+        @include base-mixins.tablet
+            flex-flow: row
+
